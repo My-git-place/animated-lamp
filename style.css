@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(19, 115, 106);
+}
+#right_arrow{
+  position: absolute;
+  top:250px;
+  transform:rotate(180deg);
+  right:580px;
+}
+#left_arrow{
+  position: absolute;
+  top:250px;
+  right:2.5px;
+}
