@@ -12,3 +12,8 @@ body {
   top:250px;
   right:2.5px;
 }
+#head{
+  position: absolute;
+  top:290px;
+  right:330px;
+}
