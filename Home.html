@@ -13,18 +13,21 @@
       var right = document.getElementById("left_arrow");
       var slide = 1;
       var clickTrue = false;
-      var onRightClick = function(){
-      var slide=slide+1;
-      var clickTrue = true;
-      };
-      var onLeftClick = function(){
+      function(){
       var slide=slide-1;
       var clickTrue=true;
       }
+      left.addEventListener("click",  function(){
+      var slide=slide-1;
+      var clickTrue=true;
+      });
+      right.addEventListener("click",  function(){
+      var slide=slide+1;
+      var clickTrue=true;
+      });
       while (clickTrue===true){
       var clickTrue = false;  
-      left.addEventListener("click",onLeftClick);
-      right.addEventListener("click",onRightClick);
+      
       if (slide===1){
       head.innerHTML="Owen";
       } else if (slide===2){
