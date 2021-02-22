@@ -12,12 +12,17 @@
       var left = document.getElementById("right_arrow");
       var right = document.getElementById("left_arrow");
       var slide = 1;
+      var clickTrue = False;
       var onRightClick = function(){
       var slide=slide+1;
+      var clickTrue = true;
       };
       var onLeftClick = function(){
       var slide=slide-1;
+      var clickTrue=true;
       }
+      while (clickTrue=true){
+      var clickTrue = false;  
       left.addEventListener("click",onRightClick);
       right.addEventListener("click",onLeftClick);
       if (slide===1){
@@ -28,7 +33,8 @@
       head.innerHTML="Mihir";
       } else if (slide===4){
       head.innerHTML="Brigita";
-      };
+      };}
+      
     </script>
   </body>
 </html>
