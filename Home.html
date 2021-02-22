@@ -4,10 +4,31 @@
   <link rel=stylesheet href="style.css">
   </head>
   <body>
-    <h1 id="head">Owen</h1>
+    <h1 id="head"></h1>
     <img  id="left_arrow" src="https://image.flaticon.com/icons/png/512/60/60758.png" width=50>
     <img id="right_arrow" src="https://image.flaticon.com/icons/png/512/60/60758.png" width=50>
-    <script src=javascript.js">
+    <script>
+      var head = document.getElementById("head");
+      var left = document.getElementById("right_arrow");
+      var right = document.getElementById("left_arrow");
+      var slide = 1;
+      var onRightClick = function(){
+      var slide=slide+1;
+      };
+      var onLeftClick = function(){
+      var slide=slide-1;
+      }
+      left.addEventListener("click",onRightClick);
+      right.addEventListener("click",onLeftClick);
+      if (slide===1){
+      head.innerHTML="Owen";
+      } else if (slide===2){
+      head.innerHTML="Meeghan";
+      } else if (slide===3){
+      head.innerHTML="Mihir";
+      } else if (slide===4){
+      head.innerHTML="Brigita";
+      };
     </script>
   </body>
 </html>
