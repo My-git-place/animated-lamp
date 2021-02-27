@@ -13,6 +13,11 @@ var onRightClick = function () {
   name.innerHTML = "Mihir";
 } else if (slide === 4) {
   name.innerHTML= "Brigita";
+} 
+  if (slide>=5){
+  slide=4;
+} else if (slide<=0){
+  slide=1
 }
 };
 var onLeftClick = function () {
@@ -26,10 +31,11 @@ var onLeftClick = function () {
   name.innerHTML = "Mihir";
 } else if (slide === 4) {
   name.innerHTML= "Brigita";
-} else if(slide>=5){
+} 
+  if (slide>=5){
   slide=4;
-} else if(slide<=0){
-  slide=1;
+} else if (slide<=0){
+  slide=1
 }
 };
 right.addEventListener("click", onRightClick);
