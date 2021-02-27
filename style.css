@@ -1,0 +1,18 @@
+#left{
+  position:absolute;
+  top:250px;
+  transform:rotate(180deg);
+}
+#right{
+  position:absolute;
+  top:250px;
+  right:9.5px;
+}
+body{
+  background-color:#B2DFDB;
+}
+#name{
+  position:absolute;
+  right:425px;
+  top:100px;
+}
